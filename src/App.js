@@ -5,6 +5,7 @@ import HookStateToggler from './components/hookStateToggler/HookStateToggler';
 import ClassForm from './components/classForm/ClassForm';
 import HookForm from './components/hookForm/HookForm';
 import RefactoredHookForm from './components/hookForm/RefactoredHookForm';
+import Clicker from './components/clicker/Clicker';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <ClassForm />
       <HookForm />
       <RefactoredHookForm />
+      <Clicker />
     </div>
   );
 }

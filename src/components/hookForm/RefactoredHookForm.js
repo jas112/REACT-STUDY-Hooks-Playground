@@ -18,7 +18,7 @@ function RefactoredHookForm() {
               onChange={updateEmail}
           >
           </input>
-          <button onClick={resetEmail}>Submit Email</button>
+          <button onClick={resetEmail}>Reset Email</button>
         </div>
         <div>
           <input
@@ -28,7 +28,7 @@ function RefactoredHookForm() {
               onChange={updatePassword}
           >
           </input>
-          <button onClick={resetPassword}>Submit Password</button>
+          <button onClick={resetPassword}>Reset Password</button>
         </div>
 
     </div>
