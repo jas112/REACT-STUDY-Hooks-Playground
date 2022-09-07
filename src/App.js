@@ -6,7 +6,9 @@ import ClassForm from './components/classForm/ClassForm';
 import HookForm from './components/hookForm/HookForm';
 import RefactoredHookForm from './components/hookForm/RefactoredHookForm';
 import Clicker from './components/clicker/Clicker';
+import StarWarsFilms from './components/starWarsFilms/StarWarsFilms';
 import './App.css';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <HookForm />
       <RefactoredHookForm />
       <Clicker />
+      <StarWarsFilms />
     </div>
   );
 }
