@@ -4,20 +4,33 @@ import useFormState from './hooks/useFormState';
 function RefactoredHookForm() {
 
     const [email, updateEmail, resetEmail] = useFormState('');
-
+    const [password, updatePassword, resetPassword] = useFormState('');
 
   return (
     <div className='RefactoredHookForm App-module'>
         <h1>Refactored Hook Form</h1>
-        <h1>{`Email entered => ${email}`}</h1>
-        <input
-            type='text'
-            name='email'
-            value={email}
-            onChange={updateEmail}
-        >
-        </input>
-        <button onClick={resetEmail}>Submit</button>
+        <h1>{`Email > ${email} | Password > ${password}`}</h1>
+        <div>
+          <input
+              type='text'
+              name='email'
+              value={email}
+              onChange={updateEmail}
+          >
+          </input>
+          <button onClick={resetEmail}>Submit Email</button>
+        </div>
+        <div>
+          <input
+              type='password'
+              name='password'
+              value={password}
+              onChange={updatePassword}
+          >
+          </input>
+          <button onClick={resetPassword}>Submit Password</button>
+        </div>
+
     </div>
   )
 }
