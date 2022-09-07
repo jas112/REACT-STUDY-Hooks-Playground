@@ -6,10 +6,9 @@ function CounterWithHooks(props){
 
     return (
         <div>
-            <div>
-                {`Counter Equals => ${count}`}
-                <button onClick={() = }></button>
-            </div>
+            <h1>{`Counter Equals => ${count}`}</h1>
+            <button onClick={() => setCount(count + 1)}>Increment Count</button>
+            <button onClick={() => setCount(0)}>Reset Count</button>
         </div>
     );
 }
