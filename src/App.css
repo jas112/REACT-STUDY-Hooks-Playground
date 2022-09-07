@@ -1,5 +1,23 @@
 .App {
   text-align: center;
+  padding: 25px 10px 50px;
+  margin: 25px auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px #00000080;
+  width:800px;
+}
+
+.App-title{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.App-module{
+  padding: 25px;
+  margin: 15px auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px #00000080;
+  width:90%;
 }
 
 .App-logo {

@@ -23,7 +23,7 @@ class Counter extends Component {
     const {count} = this.state;
 
     return (
-      <div>
+      <div className='Counter App-module'>
         <h1>{`Counter Equals => ${count}`}</h1>
         <button onClick={this.incrementCount}>Increment Count</button>
         <button onClick={this.resetCount}>Reset Count</button>
