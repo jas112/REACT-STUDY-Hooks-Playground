@@ -7,12 +7,9 @@ function StarWarsFilms() {
 
     useEffect(() => {
         async function fetchSWData() {
-        // You can await here
-        const response = await axios.get(`https://swapi.dev/api/films/${filmId}/`);
-        console.log(response.data);
-
-        setSWFilmData(response.data);
-        // ...
+            const response = await axios.get(`https://swapi.dev/api/films/${filmId}/`);
+            console.log(response.data);
+            setSWFilmData(response.data);
         }
         fetchSWData();
     }, [filmId]);
@@ -30,13 +27,15 @@ function StarWarsFilms() {
                     <option value='4'>Star Wars 4</option>
                     <option value='5'>Star Wars 5</option>
                     <option value='6'>Star Wars 6</option>
-                    <option value='7'>Star Wars 7</option>
                 </select>
             </div>
             <div className='StarWarsFilms-console-display App-module'>
                 <h1>
-               
+                    {swFilmData.title}
                 </h1>
+                <p style={{textAlign: 'left'}}>
+                    {swFilmData.opening_crawl}
+                </p>
             </div>
         </div>
     </div>
