@@ -1,7 +1,21 @@
 import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 
 function StarWarsFilms() {
     const [filmId, setFilmId] = useState(1);
+    const [swFilmData, setSWFilmData] = useState({})
+
+    useEffect(() => {
+        async function fetchSWData() {
+        // You can await here
+        const response = await axios.get(`https://swapi.dev/api/films/${filmId}/`);
+        console.log(response.data);
+
+        setSWFilmData(response.data);
+        // ...
+        }
+        fetchSWData();
+    }, [filmId]);
 
   return (
     <div className='StarWarsFilms App-module'>
@@ -20,7 +34,9 @@ function StarWarsFilms() {
                 </select>
             </div>
             <div className='StarWarsFilms-console-display App-module'>
-
+                <h1>
+               
+                </h1>
             </div>
         </div>
     </div>
